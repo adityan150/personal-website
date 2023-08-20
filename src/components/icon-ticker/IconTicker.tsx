@@ -42,7 +42,7 @@ const IconTicker: React.FC<IconTickerProps> = ({
     >
       {icons.map((item: string, i: number) => (
         <div key={i} className="skill">
-          <img src={`/src/assets/icons/${item}.svg`} alt={item} />
+          <img src={`/icons/${item}.svg`} alt={item} />
           <p className="skill-text">{item}</p>
         </div>
       ))}
