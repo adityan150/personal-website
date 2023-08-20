@@ -1,0 +1,9 @@
+.hero-text {
+  font-size: 20rem;
+  top: 5rem;
+  right: 5rem;
+  opacity: 0.5;
+  color: white;
+  filter: blur(10px);
+  text-transform: capitalize;
+}
