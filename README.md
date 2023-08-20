@@ -1,2 +1,2 @@
 # Personal Website
-[Click here to visit the website](www.adityanautiyal.in)
+[Click here to visit the website](http://www.adityanautiyal.in/)
