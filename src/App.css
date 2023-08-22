@@ -1,0 +1,45 @@
+.scroll-context {
+  height: 500vh;
+}
+
+/* Hide scroll bar */
+body::-webkit-scrollbar {
+  width: 0px; /* Adjust as needed */
+  opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide scrollbar thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide scrollbar track */
+}
+
+.root-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #080f0f;
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 1023px) {
+  .root-container {
+    /* Adjust properties for smaller screens */
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: flex-start;
+  }
+}
+
+/* Large screens (desktops and larger) */
+@media screen and (min-width: 1024px) {
+}

@@ -13,11 +13,12 @@ const Skills: React.FC = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="skills-content">
+        <h1 className="skills-heading">My skills</h1>
         <div className="ticker-1">
-          <IconTicker />
+          <IconTicker duration={20} />
         </div>
         <div className="ticker-2">
-          <IconTicker duration={30} />
+          <IconTicker duration={45} />
         </div>
         <div className="ticker-3">
           <IconTicker duration={15} />

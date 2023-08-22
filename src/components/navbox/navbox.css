@@ -1,16 +1,8 @@
 .navbox {
   flex: 1;
-  height: 100%;
-}
-
-.title {
-  font-size: 4rem;
-  font-weight: 400;
-  position: absolute;
-  top: 2rem;
-  left: 5vw;
-  padding-left: 10px;
-  color: #fefefe;
+  /* height: 100%; */
+  background-color: transparent;
+  z-index: 2;
 }
 
 .navbox__link-container {
@@ -20,8 +12,9 @@
   align-items: flex-start;
   gap: 10px;
   position: fixed;
-  top: 30vh;
-  left: 5vw;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
   padding-left: 20px;
   border-left: 2px solid #ddd;
 }
@@ -44,10 +37,14 @@
 }
 
 /* Small screens (mobile devices) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .navbox__link-container {
-    top: 1rem;
-    margin: 0 auto;
+    width: 1023px;
+    max-width: 90%;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,10 +61,6 @@
     font-size: 1.5rem;
     border-bottom: 1px #ddd solid;
   }
-}
-
-/* Medium screens (tablets) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
 }
 
 /* Large screens (desktops and larger) */

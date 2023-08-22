@@ -8,15 +8,17 @@
 .home-content {
   background-image: url("../../assets/blob.svg");
   background-repeat: no-repeat;
-  background-size: 100% 1200px;
+  background-size: 120vh 1200px;
   background-position: center;
-  height: 120%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
   padding: 2rem;
+  overflow: visible;
+  text-align: center;
 }
 
 .home-title {
@@ -31,5 +33,19 @@
 .home-text {
   font-size: 1.5rem;
   color: #fff;
-  text-align: center;
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 767px) {
+  .home-title {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .home-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large screens (desktops and larger) */
+@media screen and (min-width: 1024px) {
 }
