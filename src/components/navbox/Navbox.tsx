@@ -1,12 +1,24 @@
 import "./navbox.css";
 import { Link, useLocation } from "react-router-dom";
 
+// type Breakpoint = {
+//   min: number;
+//   max: number;
+//   prev: string;
+//   next: string;
+// };
+//
+// const breakpoints: Record<string, Breakpoint> = {
+//   "/": { min: 0, max: 19, prev: "/", next: "/skills" },
+//   "/skills": { min: 20, max: 39, prev: "/", next: "/projects" },
+//   "/projects": { min: 40, max: 59, prev: "/skills", next: "/contact" },
+//   "/contact": { min: 60, max: 79, prev: "/projects", next: "/about" },
+//   "/about": { min: 80, max: 101, prev: "/contact", next: "/contact" },
+// };
+
 const Navbox: React.FC = () => {
   const location = useLocation();
   const page = location.pathname;
-
-  let heroText = page.substring(1, 2);
-  if (heroText === "") heroText = "H";
 
   return (
     <div className="navbox">

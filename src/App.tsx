@@ -6,8 +6,12 @@ import AnimatedRoutes from "./components/animated-routes/AnimatedRoutes";
 function App() {
   return (
     <BrowserRouter>
-      <Navbox />
-      <AnimatedRoutes />
+      <div className="scroll-context">
+        <div className="root-container">
+          <Navbox />
+          <AnimatedRoutes />
+        </div>
+      </div>
     </BrowserRouter>
   );
 }
